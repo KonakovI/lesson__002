@@ -7,19 +7,28 @@ zoo = ['lion', 'kangaroo', 'elephant', 'monkey', ]
 
 # посадите медведя (bear) между львом и кенгуру
 #  и выведите список на консоль
-# TODO здесь ваш код
+zoo.insert(1,  'bear')
+print(zoo)
 
 # добавьте птиц из списка birds в последние клетки зоопарка
 birds = ['rooster', 'ostrich', 'lark', ]
 #  и выведите список на консоль
-# TODO здесь ваш код
+zoo.append(birds[0])
+zoo.append(birds[1])
+zoo.append(birds[2])
+print(zoo)
+
 
 # уберите слона
 #  и выведите список на консоль
-# TODO здесь ваш код
+zoo.remove('elephant')
+print(zoo)
 
 # выведите на консоль в какой клетке сидит лев (lion) и жаворонок (lark).
 # Номера при выводе должны быть понятны простому человеку, не программисту.
-# TODO здесь ваш код
+lion_cell = zoo.index('lion')
+lark_cell = zoo.index('lark')
+print(f"Лев сидит в клетке под номером {lion_cell + 1}, а жаворонок в клетке под номером {lark_cell + 1}")
+
 
 
